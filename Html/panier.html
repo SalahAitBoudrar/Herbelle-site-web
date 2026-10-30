@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbelle - Panier</title>
+    <link rel="stylesheet" href="../Css/panier.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="header-container">
+            <div class="header-top">
+                <div class="logo-container">
+                    <a href="index.html" class="logo-text">
+                        <span class="logo-emoji">🌿</span>Herbelle
+                    </a>
+                </div>
+                
+                <div class="search-container">
+                    <form action="recherche.html" method="GET">
+                        <input type="text" placeholder="Rechercher nos produits..." name="q">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                
+                <div class="header-right">
+                    <div class="auth-buttons">
+                        <button class="auth-btn login-btn" onclick="window.location.href='connexion.html'">Connexion</button>
+                        <button class="auth-btn register-btn" onclick="window.location.href='inscription.html'">Inscription</button>
+                    </div>  
+                    <div class="header-icons">                        
+                        <a href="panier.html" class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header-bottom">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link">Produits</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="tisanes.html">Tisanes</a></li>
+                                <li><a href="thes.html">Thés</a></li>
+                                <li><a href="epices.html">Épices</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#about" class="nav-link">Sur nous</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                        <li><a href="#reviews" class="nav-link">Avis</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenu du panier -->
+    <main class="cart-container">
+        <h1 class="cart-title">Votre Panier</h1>
+        
+        <div class="cart-content">
+            <div class="cart-items" id="cart-items">
+                <!-- Les articles du panier seront ajoutés dynamiquement ici -->
+                <div class="empty-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>Votre panier est vide</h3>
+                    <p>Parcourez notre sélection de produits et ajoutez vos favoris à votre panier</p>
+                    <a href="tisanes.html" class="continue-shopping">Continuer vos achats</a>
+                </div>
+            </div>
+            
+            <div class="cart-summary" id="cart-summary">
+                <h3 class="summary-title">Résumé de la commande</h3>
+                <div class="summary-row">
+                    <span>Sous-total</span>
+                    <span id="subtotal">0.00 €</span>
+                </div>
+                <div class="summary-row">
+                    <span>Livraison</span>
+                    <span>Gratuite</span>
+                </div>
+                <div class="summary-row summary-total">
+                    <span>Total</span>
+                    <span id="total">0.00 €</span>
+                </div>
+                <button class="checkout-btn" id="checkout-btn" disabled>Passer la commande</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col footer-about">
+                <h3><span>🌿</span>Herbelle</h3>
+                <p>La nature en tasse depuis 2020. Produits bio et équitables pour votre bien-être.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+                <button class="logout-btn">Se déconnecter</button>
+            </div>
+            
+            <div class="footer-col footer-links">
+                <h4>Liens utiles</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="tisanes.html">Tisanes</a></li>
+                    <li><a href="thes.html">Thés</a></li>
+                    <li><a href="epices.html">Épices</a></li>
+                    <li><a href="#about">Sur nous</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col footer-contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="https://www.google.com/maps/@36.7054483,4.063232,14z?entry=ttu" style="color: white;"><i class="fas fa-map-marker-alt"></i> Tizi-Ouzou, Algérie</a></li>
+                    <li><i class="fas fa-phone"></i> +213 555 555 55</li>
+                    <li><i class="fas fa-envelope"></i> Herbelle25@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <a href="cgv.html">CGV</a>
+                <a href="mentions-legales.html">Mentions légales</a>
+                <a href="confidentialite.html">Confidentialité</a>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2025 Herbelle. Tous droits réservés.
+            </div>
+            <div class="footer-payment">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </footer>
+
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Récupérer le panier depuis le localStorage
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const cartItemsContainer = document.getElementById('cart-items');
+        const cartSummary = document.getElementById('cart-summary');
+        const checkoutBtn = document.getElementById('checkout-btn');
+        
+        // Mettre à jour le compteur du panier dans le header
+        function updateCartCount() {
+            const totalItems = cart.reduce((total, item) => total + (item.quantity || 1), 0);
+            document.querySelector('.cart-count').textContent = totalItems;
+        }
+        
+        // Afficher les articles du panier
+        function displayCartItems() {
+            if (!cart || cart.length === 0) {
+                cartItemsContainer.innerHTML = `
+                    <div class="empty-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h3>Votre panier est vide</h3>
+                        <p>Parcourez notre sélection de produits et ajoutez vos favoris à votre panier</p>
+                        <a href="tisanes.html" class="continue-shopping">Continuer vos achats</a>
+                    </div>
+                `;
+                cartSummary.style.display = 'none';
+                checkoutBtn.disabled = true;
+                return;
+            }
+            
+            cartSummary.style.display = 'block';
+            checkoutBtn.disabled = false;
+            
+            let itemsHTML = '';
+            let subtotal = 0;
+            
+            cart.forEach((item) => {
+                // S'assurer que la quantité est au moins 1
+                const quantity = item.quantity || 1;
+                const itemTotal = (parseFloat(item.price) || 0) * quantity;
+                subtotal += itemTotal;
+                
+                itemsHTML += `
+                    <div class="cart-item" data-id="${item.id}">
+                        <img src="${item.image || 'images/default-product.jpg'}" alt="${item.name}" class="cart-item-img">
+                        <div class="cart-item-details">
+                            <h3>${item.name}</h3>
+                            <span class="cart-item-price">${(parseFloat(item.price) || 0).toFixed(2)} €</span>
+                            <div class="cart-item-quantity">
+                                <button class="quantity-btn minus" data-id="${item.id}">-</button>
+                                <input type="number" class="quantity-input" value="${quantity}" min="1" data-id="${item.id}">
+                                <button class="quantity-btn plus" data-id="${item.id}">+</button>
+                            </div>
+                        </div>
+                        <div class="cart-item-actions">
+                            <span class="item-total">${itemTotal.toFixed(2)} €</span>
+                            <span class="remove-item" data-id="${item.id}">
+                                <i class="fas fa-trash"></i> Supprimer
+                            </span>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            cartItemsContainer.innerHTML = itemsHTML;
+            document.getElementById('subtotal').textContent = subtotal.toFixed(2) + ' €';
+            document.getElementById('total').textContent = subtotal.toFixed(2) + ' €';
+            
+            // Ajouter les événements pour les boutons
+            addCartEventListeners();
+        }
+        
+        function addCartEventListeners() {
+            document.querySelectorAll('.quantity-btn.minus').forEach(btn => {
+                btn.addEventListener('click', decreaseQuantity);
+            });
+            
+            document.querySelectorAll('.quantity-btn.plus').forEach(btn => {
+                btn.addEventListener('click', increaseQuantity);
+            });
+            
+            document.querySelectorAll('.quantity-input').forEach(input => {
+                input.addEventListener('change', updateQuantity);
+            });
+            
+            document.querySelectorAll('.remove-item').forEach(btn => {
+                btn.addEventListener('click', removeItem);
+            });
+        }
+        
+        // Diminuer la quantité
+        function decreaseQuantity(e) {
+            const id = e.target.getAttribute('data-id');
+            const itemIndex = cart.findIndex(item => item.id === id);
+            
+            if (itemIndex !== -1 && cart[itemIndex].quantity > 1) {
+                cart[itemIndex].quantity--;
+                saveCart();
+            }
+        }
+        
+        // Augmenter la quantité
+        function increaseQuantity(e) {
+            const id = e.target.getAttribute('data-id');
+            const itemIndex = cart.findIndex(item => item.id === id);
+            
+            if (itemIndex !== -1) {
+                cart[itemIndex].quantity = (cart[itemIndex].quantity || 1) + 1;
+                saveCart();
+            }
+        }
+        
+        // Mettre à jour la quantité via l'input
+        function updateQuantity(e) {
+            const id = e.target.getAttribute('data-id');
+            const newQuantity = parseInt(e.target.value) || 1;
+            const itemIndex = cart.findIndex(item => item.id === id);
+            
+            if (itemIndex !== -1 && newQuantity > 0) {
+                cart[itemIndex].quantity = newQuantity;
+                saveCart();
+            } else {
+                e.target.value = cart[itemIndex]?.quantity || 1;
+            }
+        }
+        
+        // Supprimer un article
+        function removeItem(e) {
+            const id = e.target.closest('.remove-item').getAttribute('data-id');
+            cart = cart.filter(item => item.id !== id);
+            saveCart();
+        }
+        
+        // Sauvegarder le panier
+        function saveCart() {
+            localStorage.setItem('cart', JSON.stringify(cart));
+            displayCartItems();
+            updateCartCount();
+        }
+        
+        // Passer la commande
+        checkoutBtn.addEventListener('click', function() {
+            if (cart.length === 0) return;
+            
+            alert('Commande passée avec succès! Merci pour votre achat.');
+            localStorage.removeItem('cart');
+            cart = [];
+            displayCartItems();
+            updateCartCount();
+        });
+        
+        // Initialiser l'affichage
+        displayCartItems();
+        updateCartCount();
+        
+        // Gestion du header qui disparaît/reapparaît au scroll
+        let lastScroll = 0;
+        const header = document.getElementById('header');
+        
+        window.addEventListener('scroll', function() {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll <= 0) {
+                header.classList.remove('hidden');
+                return;
+            }
+            
+            if (currentScroll > lastScroll && !header.classList.contains('hidden')) {
+                header.classList.add('hidden');
+            } else if (currentScroll < lastScroll && header.classList.contains('hidden')) {
+                header.classList.remove('hidden');
+            }
+            
+            lastScroll = currentScroll;
+        });
+    });
+</script>
+</body>
+</html>

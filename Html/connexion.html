@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion Herbelle</title>
+    <link rel="stylesheet" href="../Css/footer.css">
+    <link rel="stylesheet" href="../Css/header.css">
+    <link rel="stylesheet" href="../Css/connexion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">   
+    
+</head>
+
+<body>
+       <!-- Header -->
+    <header id="header">
+        <div class="header-container">
+            <div class="header-top">
+                <div class="logo-container">
+                    <a href="index.html" class="logo-text">
+                        <span class="logo-emoji">🌿</span>Herbelle
+                    </a>
+                </div>
+                
+                <div class="search-container">
+                    <form action="recherche.html" method="GET">
+                        <input type="text" placeholder="Rechercher nos produits..." name="q">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                
+                <div class="header-right">
+                    <div class="auth-buttons">
+                        <button class="auth-btn login-btn" onclick="window.location.href='connexion.html'">Connexion</button>
+                        <button class="auth-btn register-btn" onclick="window.location.href='inscription.html'">Inscription</button>
+                    </div>  <div class="header-icons">                      
+                        <a href="panier.html" class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                         </a>   
+                      </div>  
+                </div>
+            </div>
+            
+            <div class="header-bottom">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link">Produits</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="tisanes.html">Tisanes</a></li>
+                                <li><a href="thes.html">Thés</a></li>
+                                <li><a href="epices.html">Épices</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#about" class="nav-link">Sur nous</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                        <li><a href="#reviews" class="nav-link">Avis</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="auth-container">
+        <div class="auth-design">
+            <div class="design-content">
+                <h2>Bienvenue de retour</h2>
+                <p>Connectez-vous pour accéder à votre espace premium et découvrir nos dernières nouveautés.</p>
+            </div>
+        </div>
+
+        <!-- Login form -->
+        <div class="auth-form-container">
+            <div class="form-wrapper">
+                <div class="form-header">
+                    <h2>Content de vous revoir</h2>
+                    <p>Connectez-vous pour accéder à votre compte</p>
+                </div>
+                
+                <form id="login-form">
+                    <div class="form-groupcnx">
+                        <label for="email">Adresse email</label>
+                        <div class="input-wrapper">
+                            <input type="email" id="email" class="form-control" placeholder="votre@email.com" required>
+                            <i class="fas fa-envelope input-icon"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-groupcnx">
+                        <label for="password">Mot de passe</label>
+                        <div class="input-wrapper">
+                            <input type="password" id="password" class="form-control" placeholder="••••••••" required>
+                            <i class="fas fa-lock input-icon"></i>
+                            <i class="fas fa-eye password-toggle" onclick="togglePassword('password', this)"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="options-row">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Se souvenir de moi</label>
+                        </div>
+                        <a href="recup mdp.html" class="forgot-password">Mot de passe oublié ?</a>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        Se connecter
+                    </button>
+                    
+                    <div id="login-error"></div>
+                    
+                    <div class="divider">ou</div>
+                    
+                    <div class="auth-footer">
+                        <p>Pas encore membre ? <a href="inscription.html">Créez un compte</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+ <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+           <div class="footer-col footer-about">
+    <h3><span>🌿</span>Herbelle</h3>
+    <p>La nature en tasse depuis 2020. Produits bio et équitables pour votre bien-être.</p>
+    <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+    </div>
+    <button class="logout-btn">Se déconnecter</button>
+</div>
+            
+            <div class="footer-col footer-links">
+                <h4>Liens utiles</h4>
+               <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="tisanes.html">Tisanes</a></li>
+                    <li><a href="thes.html">Thés</a></li>
+                    <li><a href="epices.html">Épices</a></li>
+                    <li><a href="#about">Sur nous</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col footer-contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li> <a href="https://www.google.com/maps/@36.7054483,4.063232,14z?entry=ttu" style="color: white;"><i class="fas fa-map-marker-alt"></i> Tizi-Ouzou, Algérie</a></li>
+                    <li><i class="fas fa-phone"></i> +213 555 555 55</li>
+                    <li><i class="fas fa-envelope"></i> Herbelle25@gmail.com</li>
+                </ul>
+                
+            
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <a href="cgv.html">CGV</a>
+                <a href="mentions-legales.html">Mentions légales</a>
+                <a href="confidentialite.html">Confidentialité</a>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2025 Herbelle. Tous droits réservés.
+            </div>
+            <div class="footer-payment">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </footer>
+ 
+   <script src="../Js/connexion.js"></script>
+   <script>
+    function togglePassword(inputId, icon) {
+            const input = document.getElementById(inputId);
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.classList.replace('fa-eye', 'fa-eye-slash');
+            } else {
+                input.type = 'password';
+                icon.classList.replace('fa-eye-slash', 'fa-eye');
+            }
+        }
+
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const errorElement = document.getElementById('login-error');
+            
+            // Réinitialiser le message d'erreur
+            errorElement.textContent = '';
+            
+            // Récupérer les comptes enregistrés
+            const accounts = JSON.parse(localStorage.getItem('accounts')) || [];
+            
+            // Vérifier si le compte existe
+            const existingAccount = accounts.find(account => 
+                account.email === email && account.password === password
+            );
+            
+            if (existingAccount) {
+                // Stocker l'état de connexion
+                localStorage.setItem('isLoggedIn', 'true');
+                localStorage.setItem('currentUser', JSON.stringify(existingAccount));
+                
+                // Redirection vers l'accueil
+                window.location.href = 'index.html';
+            } else {
+                // Afficher le message d'erreur
+                errorElement.textContent = 'Mot de passe incorrect ou compte inexistant';
+            }
+        });
+
+        // Vérifier si l'utilisateur est déjà connecté au chargement de la page
+        window.addEventListener('DOMContentLoaded', function() {
+            if (localStorage.getItem('isLoggedIn') === 'true') {
+                window.location.href = 'index.html';
+            }
+        });
+   </script>
+</body>
+</html>

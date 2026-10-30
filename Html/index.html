@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbelle - Accueil</title>
+<link rel="stylesheet" href="../Css/index.css">
+    <link rel="stylesheet" href="../Css/footer.css">
+    <link rel="stylesheet" href="../Css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+   
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="header-container">
+            <div class="header-top">
+                <div class="logo-container">
+                    <a href="index.html" class="logo-text">
+                        <span class="logo-emoji">🌿</span>Herbelle
+                    </a>
+                </div>
+                
+                <div class="search-container">
+                    <form action="recherche.html" method="GET">
+                        <input type="text" placeholder="Rechercher nos produits..." name="q">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                
+                
+                    
+                    <div class="auth-buttons">
+                        <button class="auth-btn login-btn" onclick="window.location.href='connexion.html'">Connexion</button>
+                        <button class="auth-btn register-btn" onclick="window.location.href='inscription.html'">Inscription</button>
+                    </div>
+                    <div class="header-right">
+                    <div class="header-icons">                     
+                        <a href="panier.html" class="cart-icon" title="Panier">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header-bottom">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link">Produits</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="tisanes.html">Tisanes</a></li>
+                                <li><a href="thes.html">Thés</a></li>
+                                <li><a href="epices.html">Épices</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#about" class="nav-link">Sur nous</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                        <li><a href="#reviews" class="nav-link">Avis</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Slider Hero -->
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide active">
+                <img src="../Images/tizanes bg.jpg" alt="Herbal Tea" loading="lazy">
+                <div class="slide-content">
+                    <h2 >Découvrez nos Tisanes Bio</h2>
+                    <p>Des mélanges uniques pour votre bien-être</p>
+                    <div class="hero-buttons">
+                        <a href="tisanes.html" class="discover-btn">Découvrir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="../Images/thez bg.jpg" alt="Tea" loading="lazy">
+                <div class="slide-content">
+                    <h2>Thés d'Exception</h2>
+                    <p>Sélectionnés avec soin pour vous</p>
+                    <div class="hero-buttons">
+                        <a href="thes.html" class="discover-btn">Découvrir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="../Images/ebg.jpg" alt="Spices" loading="lazy">
+                <div class="slide-content">
+                    <h2>Épices du Monde</h2>
+                    <p>Des saveurs authentiques</p>
+                    <div class="hero-buttons">
+                        <a href="epices.html" class="discover-btn">Découvrir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-dots"></div>
+        <button class="slider-btn prev" aria-label="Précédent">❮</button>
+        <button class="slider-btn next" aria-label="Suivant">❯</button>
+    </div>
+
+    <!-- Section Bienvenue -->
+    <section class="welcome-section">
+        <div class="welcome-container">
+            <h2 class="main-title">Bienvenue chez Herbelle</h2>
+            <p class="description">
+                Découvrez l'univers apaisant des tisanes, la richesse aromatique des thés, et l'authenticité de nos épices sélectionnées avec soin.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section Produits -->
+    <section class="products-section">
+        <h2 class="section-title">Nos Produits Phares</h2>
+        <div class="products-grid">
+            <a href="tisanes.html" class="product-card">
+                <img src="../Images/tisane serivce.jpg" alt="Tisanes">
+                <div class="product-info">
+                    <h3>Tisanes</h3>
+                    <p>Découvrez nos mélanges apaisants</p>
+                    <button class="view-all-btn">Voir plus</button>
+                </div>
+            </a>
+            <a href="thes.html" class="product-card">
+                <img src="../Images/teas services2.jpg" alt="Thés">
+                <div class="product-info">
+                    <h3>Thés</h3>
+                    <p>Une sélection raffinée</p>
+                    <button class="view-all-btn">Voir plus</button>
+                </div>
+            </a>
+            <a href="epices.html" class="product-card">
+                <img src="../Images/epices.jpg" alt="Épices">
+                <div class="product-info">
+                    <h3>Épices</h3>
+                    <p>Des saveurs du monde entier</p>
+                    <button class="view-all-btn">Voir plus</button>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- Section About -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h2 class="section-title">Notre Histoire</h2>
+              <p>
+                    Fondée en 2020, Herbelle est née de notre passion pour les plantes et les saveurs naturelles. 
+                    Nous sélectionnons avec soin chaque produit pour vous offrir une expérience unique et authentique.
+                </p>
+                <p>
+                    Notre engagement : qualité, durabilité et respect de la nature. Tous nos produits sont issus de 
+                    l'agriculture biologique et du commerce équitable.
+                </p>
+                <a href="#contact" class="contact-btn">Nous contacter</a>
+            </div>
+            <div class="about-image">
+                <img src="../Images/About Us.jpg" alt="About Herbelle" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Avis -->
+   <section id="reviews" class="reviews-section">
+        <h2 class="section-title">Ce que disent nos clients</h2>
+        <div class="reviews-container">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Les tisanes sont exceptionnelles, un vrai moment de détente!"</p>
+                <span class="client-name">- Anais L.</span>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Qualité premium et service impeccable. Je recommande!"</p>
+                <span class="client-name">- Adam B.</span>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Les épices sont fraîches et parfumées. Un délice!"</p>
+                <span class="client-name">- Kamelia M.</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contactez-nous</h2>
+                <div class="contact-details">
+                    <p><i class="fas fa-envelope"></i> Herbelle25@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +213 555 555 55</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Nouvelle Ville Tizi-Ouzou, Algérie</p>
+                    <p><i class="fas fa-clock"></i> Lundi-Vendredi: 9h-18h</p>
+                </div>
+                
+                <div class="social-links">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6398.047161653696!2d4.040943544884935!3d36.69797124147514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128dc86c64a96f97%3A0xbddda2bdfd676e56!2sNouvelle-Ville%2C%20Tizi%20Ouzou!5e0!3m2!1sfr!2sdz!4v1714784093236!5m2!1sfr!2sd" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            
+            <form class="contact-form">
+                <h2>Envoyez-nous un message</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Votre nom *</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Votre email *</label>
+                        <input type="email" id="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Sujet</label>
+                    <input type="text" id="subject">
+                </div>
+                <div class="form-group">
+                    <label for="message">Votre message *</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Envoyer le message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+            <h3>Abonnez-vous à notre newsletter</h3>
+            <p>Recevez nos offres spéciales et actualités directement dans votre boîte mail</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Votre email" required>
+                <button type="submit">S'abonner</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+           <div class="footer-col footer-about">
+                <h3><span>🌿</span>Herbelle</h3>
+                <p>La nature en tasse depuis 2020. Produits bio et équitables pour votre bien-être.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+                <button class="logout-btn">Se déconnecter</button>
+            </div>
+            
+            <div class="footer-col footer-links">
+                <h4>Liens utiles</h4>
+               <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="tisanes.html">Tisanes</a></li>
+                    <li><a href="thes.html">Thés</a></li>
+                    <li><a href="epices.html">Épices</a></li>
+                    <li><a href="#about">Sur nous</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col footer-contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li> <a href="https://www.google.com/maps/@36.7054483,4.063232,14z?entry=ttu" style="color: white;"><i class="fas fa-map-marker-alt"></i> Tizi-Ouzou, Algérie</a></li>
+                    <li><i class="fas fa-phone"></i> +213 555 555 55</li>
+                    <li><i class="fas fa-envelope"></i> Herbelle25@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <a href="cgv.html">CGV</a>
+                <a href="mentions-legales.html">Mentions légales</a>
+                <a href="confidentialite.html">Confidentialité</a>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2025 Herbelle. Tous droits réservés.
+            </div>
+            <div class="footer-payment">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+<script src="../Js/index.js"></script>
+<script>
+   // Script principal pour accueil.html
+
+document.addEventListener('DOMContentLoaded', function() {
+    // 1. Slider Hero amélioré avec animations
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dotsContainer = document.querySelector('.slider-dots');
+    const totalSlides = slides.length;
+    let slideInterval;
+
+    // Créer les dots
+    function createDots() {
+        slides.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('slider-dot');
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => showSlide(index));
+            dotsContainer.appendChild(dot);
+        });
+    }
+
+    function showSlide(index) {
+        slides.forEach(slide => {
+            slide.classList.remove('active');
+            slide.style.opacity = '0';
+        });
+        
+        slides[index].classList.add('active');
+        setTimeout(() => {
+            slides[index].style.opacity = '1';
+        }, 10);
+        
+        // Mettre à jour les dots
+        document.querySelectorAll('.slider-dot').forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+        });
+        
+        currentSlide = index;
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        showSlide(currentSlide);
+    }
+
+    function startSlider() {
+        slideInterval = setInterval(nextSlide, 5000);
+    }
+
+    function resetSliderTimer() {
+        clearInterval(slideInterval);
+        startSlider();
+    }
+
+    // Initialisation du slider
+    createDots();
+    startSlider();
+
+    // Boutons du slider
+    document.querySelector('.next').addEventListener('click', () => {
+        nextSlide();
+        resetSliderTimer();
+    });
+    
+    document.querySelector('.prev').addEventListener('click', () => {
+        prevSlide();
+        resetSliderTimer();
+    });
+
+    // 2. Gestion de la déconnexion
+    const logoutBtn = document.querySelector('.logout-btn');
+    if (logoutBtn) {
+        logoutBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Simuler une déconnexion
+            localStorage.removeItem('isLoggedIn');
+            alert('Vous avez été déconnecté avec succès.');
+            window.location.href = 'connexion.html';
+        });
+    }
+
+    // Vérifier l'état de connexion (simulé)
+    function checkLoginState() {
+        const isLoggedIn = localStorage.getItem('isLoggedIn');
+        const authButtons = document.querySelector('.auth-buttons');
+        const logoutButton = document.querySelector('.logout-btn');
+
+        if (isLoggedIn === 'true') {
+            if (authButtons) authButtons.style.display = 'none';
+            if (logoutButton) logoutButton.style.display = 'block';
+        } else {
+            if (authButtons) authButtons.style.display = 'flex';
+            if (logoutButton) logoutButton.style.display = 'none';
+        }
+    }
+
+    checkLoginState();
+
+    // 3. Navigation vers la section Avis
+    const avisLinks = document.querySelectorAll('a[href="#reviews"]');
+    avisLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const reviewsSection = document.getElementById('reviews');
+            if (reviewsSection) {
+                window.scrollTo({
+                    top: reviewsSection.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+                
+                // Animation pour mettre en valeur la section
+                reviewsSection.style.transform = 'scale(1.02)';
+                reviewsSection.style.transition = 'transform 0.3s ease';
+                setTimeout(() => {
+                    reviewsSection.style.transform = 'scale(1)';
+                }, 300);
+
+                // Animation des cartes d'avis
+                const reviewCards = document.querySelectorAll('.review-card');
+                reviewCards.forEach((card, index) => {
+                    setTimeout(() => {
+                        card.style.animation = 'pulse 0.5s ease';
+                        setTimeout(() => {
+                            card.style.animation = '';
+                        }, 500);
+                    }, index * 200);
+                });
+            }
+        });
+    });
+
+    // 4. Animations au défilement
+    function animateOnScroll() {
+        const elements = document.querySelectorAll(
+            '.slide-content h2, .slide-content p, .hero-buttons, ' +
+            '.product-card, .review-card, .about-container, .contact-container, ' +
+            '.section-title, .main-title, .description'
+        );
+        
+        elements.forEach(element => {
+            const elementPosition = element.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
+            
+            if (elementPosition < screenPosition) {
+                element.style.opacity = '1';
+                element.style.transform = 'translateY(0)';
+                
+                // Animation spécifique pour les titres
+                if (element.classList.contains('section-title') ) {
+                    element.style.animation = 'textShadow 2s infinite';
+                }
+            }
+        });
+    }
+
+    // Initialiser les animations
+    function initAnimations() {
+        const animatedElements = document.querySelectorAll(
+            '.product-card, .review-card, .about-container, .contact-container, ' +
+            '.section-title, .main-title, .description'
+        );
+        
+        animatedElements.forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        });
+        
+        animateOnScroll();
+    }
+
+    initAnimations();
+    window.addEventListener('scroll', animateOnScroll);
+
+    // 5. Gestion du header qui disparaît/reapparaît au scroll
+    let lastScroll = 0;
+    const header = document.getElementById('header');
+    
+    window.addEventListener('scroll', function() {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll <= 0) {
+            header.classList.remove('hidden');
+            return;
+        }
+        
+        if (currentScroll > lastScroll && !header.classList.contains('hidden')) {
+            // On descend - cacher le header
+            header.classList.add('hidden');
+        } else if (currentScroll < lastScroll && header.classList.contains('hidden')) {
+            // On remonte - montrer le header
+            header.classList.remove('hidden');
+        }
+        
+        lastScroll = currentScroll;
+    });
+
+    // 6. Menu mobile
+    const mobileMenuToggle = document.createElement('div');
+    mobileMenuToggle.className = 'mobile-menu-toggle';
+    mobileMenuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+    document.body.appendChild(mobileMenuToggle);
+    
+    const nav = document.querySelector('.main-nav');
+    const headerContainer = document.querySelector('.header-container');
+    
+    mobileMenuToggle.addEventListener('click', function() {
+        nav.classList.toggle('active');
+        mobileMenuToggle.classList.toggle('active');
+        headerContainer.classList.toggle('mobile-menu-open');
+    });
+    
+    // Fermer le menu mobile lorsqu'un lien est cliqué
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('active');
+            mobileMenuToggle.classList.remove('active');
+            headerContainer.classList.remove('mobile-menu-open');
+            
+            // Scroll doux pour les ancres
+            if(link.getAttribute('href').startsWith('#')) {
+                const target = document.querySelector(link.getAttribute('href'));
+                if(target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+
+    // 7. Effet de survol sur les cartes produits
+    const productCards = document.querySelectorAll('.product-card');
+    productCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-10px)';
+            this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+            this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.05)';
+        });
+    });
+
+    // 8. Animation du bouton "Retour en haut"
+    const scrollTopBtn = document.querySelector('.scroll-top');
+    
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            scrollTopBtn.classList.add('visible');
+        } else {
+            scrollTopBtn.classList.remove('visible');
+        }
+    });
+    
+    scrollTopBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // 9. Validation du formulaire de contact
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Validation simple
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (!name || !email || !message) {
+                alert('Veuillez remplir tous les champs obligatoires.');
+                return;
+            }
+            
+            if (!email.includes('@') || !email.includes('.')) {
+                alert('Veuillez entrer une adresse email valide.');
+                return;
+            }
+            
+            // Simulation d'envoi
+            alert('Merci pour votre message! Nous vous contacterons bientôt.');
+            contactForm.reset();
+        });
+    }
+
+    // 10. Animation des étoiles dans les avis
+    const reviewStars = document.querySelectorAll('.stars');
+    reviewStars.forEach(stars => {
+        stars.addEventListener('mouseover', function(e) {
+            if (e.target.tagName === 'SPAN') {
+                const index = Array.from(this.children).indexOf(e.target);
+                Array.from(this.children).forEach((star, i) => {
+                    star.style.color = i <= index ? '#ffc107' : '#ccc';
+                });
+            }
+        });
+    });
+
+    // 11. Animation des titres
+    const sectionTitles = document.querySelectorAll('.section-title, .main-title');
+    sectionTitles.forEach(title => {
+        title.addEventListener('mouseover', function() {
+            this.style.animation = 'pulse 0.5s ease';
+            setTimeout(() => {
+                this.style.animation = '';
+            }, 500);
+        });
+    });
+
+    // 12. Animation des boutons
+    const buttons = document.querySelectorAll('.discover-btn, .view-all-btn, .contact-btn, .submit-btn');
+    buttons.forEach(button => {
+        button.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-3px)';
+            this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.2)';
+        });
+        
+        button.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+            this.style.boxShadow = 'none';
+        });
+    });
+});
+
+// Styles supplémentaires pour les animations
+const style = document.createElement('style');
+style.textContent = `
+    /* Animations */
+    .slide {
+        transition: opacity 0.5s ease;
+    }
+    
+    .product-card, .review-card, .about-container, .contact-container,
+    .section-title, .main-title, .description {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .product-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .product-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    }
+    
+    .scroll-top {
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+    
+    .scroll-top.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    /* Header scroll */
+    #header {
+        transition: transform 0.3s ease;
+    }
+    
+    #header.hidden {
+        transform: translateY(-100%);
+    }
+    
+    /* Bouton de déconnexion */
+    .logout-btn {
+        display: none;
+        background: #fff;
+        color: #2c3e2c;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    .logout-btn:hover {
+        background: #f0f0f0;
+    }
+    
+    /* Menu mobile */
+    .mobile-menu-toggle {
+        display: none;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        background-color: #2c3e2c;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        z-index: 1001;
+        cursor: pointer;
+        font-size: 1.5rem;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    
+    @media (max-width: 1200px) {
+        .mobile-menu-toggle {
+            display: flex;
+        }
+        
+        .main-nav ul {
+            display: none;
+            position: fixed;
+            top: 100px;
+            left: 0;
+            width: 100%;
+            background-color: #2c3e2c;
+            flex-direction: column;
+            padding: 1rem;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        
+        .main-nav ul.active {
+            display: flex;
+        }
+        
+        .header-container.mobile-menu-open {
+            padding-bottom: 1rem;
+        }
+        
+        .dropdown-menu {
+            position: static;
+            box-shadow: none;
+            background-color: transparent;
+            padding: 0.5rem 0 0 1rem;
+        }
+        
+        .dropdown-menu a {
+            color: #fff !important;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .main-nav ul {
+            top: 90px;
+        }
+    }
+
+    /* Animations supplémentaires */
+    @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+    }
+
+    @keyframes textShadow {
+        0% { text-shadow: 0 0 5px rgba(0,0,0,0.1); }
+        50% { text-shadow: 0 0 10px rgba(0,0,0,0.2); }
+        100% { text-shadow: 0 0 5px rgba(0,0,0,0.1); }
+    }
+
+    .section-title {
+        animation: textShadow 2s infinite;
+    }
+`;
+document.head.appendChild(style);
+
+</script>
+  
+</body>
+</html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbelle - Nos Tisanes Bio</title>
+     
+      <link rel="stylesheet" href="../Css/footer.css">
+    <link rel="stylesheet" href="../Css/header.css">
+  <link rel="stylesheet" href="../Css/tisanes.css">
+  <link rel="stylesheet" href="../Css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+      <!-- Header -->
+    <header id="header">
+        <div class="header-container">
+            <div class="header-top">
+                <div class="logo-container">
+                    <a href="index.html" class="logo-text">
+                        <span class="logo-emoji">🌿</span>Herbelle
+                    </a>
+                </div>
+                
+                <div class="search-container">
+                    <form action="recherche.html" method="GET">
+                        <input type="text" placeholder="Rechercher nos produits..." name="q">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                
+                <div class="header-right">
+                 <div class="auth-buttons">
+                        <button class="auth-btn login-btn" onclick="window.location.href='connexion.html'">Connexion</button>
+                        <button class="auth-btn register-btn" onclick="window.location.href='inscription.html'">Inscription</button>
+                    </div>    
+                    <div class="header-icons">                       
+                        <a href="panier.html" class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                    
+                   
+                </div>
+            </div>
+            
+            <div class="header-bottom">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link">Produits</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="tisanes.html">Tisanes</a></li>
+                                <li><a href="thes.html">Thés</a></li>
+                                <li><a href="epices.html">Épices</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#about" class="nav-link">Sur nous</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                        <li><a href="#reviews" class="nav-link">Avis</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container">
+           
+        <div class="page-header">
+            <h1>Nos Tisanes Bio</h1>
+            <p class="page-description">
+                <em>Découvrez nos mélanges 100% naturels pour le bien-être quotidien. 
+                Des plantes cultivées en montagne sans pesticides pour une pureté maximale.</em>
+            </p>
+         <div class="products-grid">
+            <!-- Tisane 1 - Camomille -->
+            <div class="product-card animate delay-1" data-id="camomille-bio">
+                <img src="../images produits/tizane camomille.jpg" alt="Tisane Camomille" class="product-image">
+                <div class="product-overlay">
+                    <h3>Bienfaits</h3>
+                    <p>Apaisante, favorise le sommeil, soulage les digestions difficiles et calme les irritations cutanées.</p>
+                    <h3>Utilisation</h3>
+                    <p>1 cuillère à soupe pour 250ml d'eau à 90°C. Infuser 7-10 minutes.</p>
+                    <h3>Origine</h3>
+                    <p>Provence, France - Récolte manuelle à l'aube</p>
+                </div>
+                 <div class="product-info">
+                    <h3 class="product-name">Camomille Bio</h3>
+                    <p class="product-price">12.90 € / 50g</p>
+                    <div class="product-actions">
+                        <button class="btn btn-cart add-to-cart"><i class="fas fa-shopping-cart"></i> Ajouter</button>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Tisane 2 - Verveine -->
+            <div class="product-card animate delay-2" data-id="Verveine-Ctronnée">
+                <img src="../images produits/Verveine tizane.jpg" alt="Tisane Verveine" class="product-image">
+                <div class="product-overlay">
+                    <h3>Bienfaits</h3>
+                    <p>Digestive, relaxante musculaire, réduit l'anxiété et les maux de tête.</p>
+                    <h3>Utilisation</h3>
+                    <p>5-6 feuilles fraîches pour 200ml d'eau à 95°C. Infuser 5 minutes.</p>
+                    <h3>Origine</h3>
+                    <p>Auvergne, France - Culture en altitude</p>
+                </div>
+                 <div class="product-info">
+                    <h3 class="product-name">Verveine Citronnée</h3>
+                    <p class="product-price">14.50 € / 40g</p>
+                    <div class="product-actions">
+                        <button class="btn btn-cart  add-to-cart"><i class="fas fa-shopping-cart"></i> Ajouter</button>
+                    </div>
+                </div>
+            </div>
+             <!-- Tisane 3 - Menthe Poivrée -->
+            <div class="product-card animate delay-3" data-id="Menthe-Poivrée-bio">
+                <img src="../images produits/Menthe poivrée coupée séchée .jpg" alt="Tisane Menthe" class="product-image">
+                <div class="product-overlay">
+                    <h3>Bienfaits</h3>
+                    <p>Rafraîchissante, décongestionnante, aide à la digestion et stimulante.</p>
+                    <h3>Utilisation</h3>
+                    <p>10 feuilles pour 300ml d'eau bouillante. Infuser 3-5 minutes maximum.</p>
+                    <h3>Origine</h3>
+                    <p>Maroc - Vallée de l'Ourika</p>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Menthe Poivrée Bio</h3>
+                    <p class="product-price">10.90 € / 60g</p>
+                    <div class="product-actions">
+                        <button class="btn btn-cart add-to-cart"><i class="fas fa-shopping-cart"></i> Ajouter</button>
+                    </div>
+                </div>
+            </div>
+             <!-- Tisane 4 - Tilleul -->
+            <div class="product-card animate delay-1" data-id="Tilleul-sauvage">
+                <img src="../images produits/Fleur de tilleul.jpg" alt="Tisane Tilleul" class="product-image">
+                <div class="product-overlay">
+                    <h3>Bienfaits</h3>
+                    <p>Calmante nerveuse, favorise l'endormissement, anti-inflammatoire des voies respiratoires.</p>
+                    <h3>Utilisation</h3>
+                    <p>2 cuillères à soupe pour 250ml à 85°C. Infuser 10 minutes couvert.</p>
+                    <h3>Origine</h3>
+                    <p>Drôme Provençale, France - Fleurs séchées à l'ombre</p>
+                </div>
+                 <div class="product-info">
+                    <h3 class="product-name">Tilleul Sauvage</h3>
+                    <p class="product-price">16.20 € / 45g</p>
+                    <div class="product-actions">
+                        <button class="btn btn-cart add-to-cart"><i class="fas fa-shopping-cart"></i> Ajouter</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Tisane 5 - Hibiscus -->
+            <div class="product-card animate delay-2" data-id="Hibiscus-bissap">
+                <img src="../images produits/Tisane Hibiscus.jpg" alt="Tisane Hibiscus" class="product-image">
+                <div class="product-overlay">
+                    <h3>Bienfaits</h3>
+                    <p>Riche en vitamine C, diurétique, régule la tension artérielle, antioxydant.</p>
+                    <h3>Utilisation</h3>
+                    <p>1 cuillère à soupe pour 200ml d'eau froide ou chaude. Infusion froide 2h recommandée.</p>
+                    <h3>Origine</h3>
+                    <p>Sénégal - Agriculture biologique équitable</p>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Hibiscus Bissap</h3>
+                    <p class="product-price">11.80 € / 80g</p>
+                    <div class="product-actions">
+                        <button class="btn btn-cart add-to-cart"><i class="fas fa-shopping-cart"></i> Ajouter</button>
+                    </div>
+                </div>
+            </div>
+             <!-- Tisane 6 - Mélisse -->
+            <div class="product-card animate delay-3" data-id="Melisse-citronnelle">
+                <img src="../images produits/Tisane Mélisse.jpg" alt="Tisane Mélisse" class="product-image">
+                <div class="product-overlay">
+                    <h3>Bienfaits</h3>
+                    <p>Anti-stress, soulage les spasmes intestinaux, antiviral léger, concentré en polyphénols.</p>
+                    <h3>Utilisation</h3>
+                    <p>7-8 feuilles fraîches écrasées pour 250ml à 80°C. Infuser 6-8 minutes.</p>
+                    <h3>Origine</h3>
+                    <p>Alpes-de-Haute-Provence, France - Récolte estivale</p>
+                </div>
+                 <div class="product-info">
+                    <h3 class="product-name">Mélisse Citronnelle</h3>
+                    <p class="product-price">15.50 € / 35g</p>
+                    <div class="product-actions">
+                        <button class="btn btn-cart add-to-cart"><i class="fas fa-shopping-cart"></i> Ajouter</button>
+                    </div>
+                </div>
+            </div>
+             <!-- Tisane 7 - Ortie -->
+            <div class="product-card animate delay-1" data-id="ortie-Dioïque">
+                <img src="../images produits/Tisane Ortie.jpg" alt="Tisane Ortie" class="product-image">
+                <div class="product-overlay">
+                    <h3>Bienfaits</h3>
+                    <p>Détoxifiante, riche en minéraux, anti-anémique, revitalisante capillaire.</p>
+                    <h3>Utilisation</h3>
+                    <p>1 cuillère à café bombée pour 200ml à 100°C. Infuser 15 minutes.</p>
+                    <h3>Origine</h3>
+                    <p>Ardèche, France - Cueillette sauvage contrôlée</p>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Ortie Dioïque</h3>
+                    <p class="product-price">9.90 € / 70g</p>
+                    <div class="product-actions">
+                        <button class="btn btn-cart add-to-cart"><i class="fas fa-shopping-cart"></i> Ajouter</button>
+                    </div>
+                </div>
+            </div>
+             <!-- Tisane 8 - Reine-des-Prés -->
+            <div class="product-card animate delay-2" data-id="Reine-des-Prés">
+                <img src="../images produits/tisane la reine-des-pres.jpg" alt="tisane la reine-des-pres" class="product-image">
+                <div class="product-overlay">
+                    <h3>Bienfaits</h3>
+                    <p>Anti-douleur naturelle, diurétique, fluidifiante sanguine, source de salicylate.</p>
+                    <h3>Utilisation</h3>
+                    <p>1 pincée de sommités fleuries pour 150ml à 90°C. Infuser 5 minutes maximum.</p>
+                    <h3>Origine</h3>
+                    <p>Normandie, France - Zones humides bio</p>
+                </div>
+                 <div class="product-info">
+                    <h3 class="product-name">Reine-des-Prés</h3>
+                    <p class="product-price">18.60 € / 30g</p>
+                    <div class="product-actions">
+                        <button class="btn btn-cart add-to-cart"><i class="fas fa-shopping-cart"></i> Ajouter</button>
+                    </div>
+                </div>
+            </div>
+             <!-- Tisane 9 - Romarin -->
+            <div class="product-card animate delay-3" data-id="Romarin-Sauvage">
+                <img src="../images produits/Tisane Romarin.jpg" alt="Tisane Romarin" class="product-image">
+                <div class="product-overlay">
+                    <h3>Bienfaits</h3>
+                    <p>Stimule la mémoire, hépatoprotecteur, antifatigue, riche en acide rosmarinique.</p>
+                    <h3>Utilisation</h3>
+                    <p>1 branche pour 250ml à 95°C. Infuser 3-4 minutes (goût fort).</p>
+                    <h3>Origine</h3>
+                    <p>Corse, France - Cueillette en maquis</p>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Romarin Sauvage</h3>
+                    <p class="product-price">13.20 € / 50g</p>
+                    <div class="product-actions">
+                        <button class="btn btn-cart add-to-cart"><i class="fas fa-shopping-cart"></i> Ajouter</button>
+                    </div>
+                </div>
+            </div>
+             <!-- Tisane 10 - Sauge -->
+            <div class="product-card animate delay-1" data-id="Sauge-Officinale">
+                <img src="../images produits/Tisane Sauge.jpg" alt="Tisane Sauge" class="product-image">
+                <div class="product-overlay">
+                    <h3>Bienfaits</h3>
+                    <p>Régule la transpiration, antiseptique buccal, équilibre hormonal féminin.</p>
+                    <h3>Utilisation</h3>
+                    <p>2-3 feuilles maximum pour 200ml à 85°C. Infuser 7 minutes.</p>
+                    <h3>Origine</h3>
+                    <p>Dalmatie, Croatie - Montagnes calcaires</p>
+                </div>
+                 <div class="product-info">
+                    <h3 class="product-name">Sauge Officinale</h3>
+                    <p class="product-price">17.90 € / 25g</p>
+                    <div class="product-actions">
+                        <button class="btn btn-cart add-to-cart"><i class="fas fa-shopping-cart"></i> Ajouter</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+      <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+           <div class="footer-col footer-about">
+    <h3><span>🌿</span>Herbelle</h3>
+    <p>La nature en tasse depuis 2020. Produits bio et équitables pour votre bien-être.</p>
+    <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+    </div>
+    <button class="logout-btn">Se déconnecter</button>
+</div>
+            
+            <div class="footer-col footer-links">
+                <h4>Liens utiles</h4>
+               <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="tisanes.html">Tisanes</a></li>
+                    <li><a href="thes.html">Thés</a></li>
+                    <li><a href="epices.html">Épices</a></li>
+                    <li><a href="#about">Sur nous</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col footer-contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li> <a href="https://www.google.com/maps/@36.7054483,4.063232,14z?entry=ttu" style="color: white;"><i class="fas fa-map-marker-alt"></i> Tizi-Ouzou, Algérie</a></li>
+                    <li><i class="fas fa-phone"></i> +213 555 555 55</li>
+                    <li><i class="fas fa-envelope"></i> Herbelle25@gmail.com</li>
+                </ul>
+                
+            
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <a href="cgv.html">CGV</a>
+                <a href="mentions-legales.html">Mentions légales</a>
+                <a href="confidentialite.html">Confidentialité</a>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2025 Herbelle. Tous droits réservés.
+            </div>
+            <div class="footer-payment">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </footer>
+
+
+        <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialiser le panier s'il n'existe pas
+        if (!localStorage.getItem('cart')) {
+            localStorage.setItem('cart', JSON.stringify([]));
+        }
+        
+        // Mettre à jour le compteur du panier au chargement
+        updateCartCount();
+        
+        // Gestion des boutons "Ajouter au panier"
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const productCard = this.closest('.product-card');
+                const productId = productCard.getAttribute('data-id');
+                const productName = productCard.querySelector('.product-name').textContent;
+                const productPrice = parseFloat(productCard.querySelector('.product-price').textContent.replace(/[^0-9.,]/g, '').replace(',', '.'));
+                const productImage = productCard.querySelector('.product-image').src;
+                
+                // Créer l'objet produit
+                const product = {
+                    id: productId,
+                    name: productName,
+                    price: productPrice,
+                    image: productImage,
+                    quantity: 1
+                };
+                
+                // Ajouter au panier
+                addToCart(product);
+                
+                // Animation de feedback
+                this.innerHTML = '<i class="fas fa-check"></i> Ajouté';
+                this.style.backgroundColor = '#6b5643';
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-shopping-cart"></i> Ajouter';
+                    this.style.backgroundColor = '#a38f78';
+                }, 2000);
+            });
+        });
+        
+        // Fonction pour ajouter un article au panier
+        function addToCart(product) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            
+            // Vérifier si le produit est déjà dans le panier
+            const existingItemIndex = cart.findIndex(item => item.id === product.id);
+            
+            if (existingItemIndex !== -1) {
+                // Si le produit existe déjà, augmenter la quantité
+                cart[existingItemIndex].quantity += 1;
+            } else {
+                // Sinon, ajouter le nouveau produit
+                cart.push(product);
+            }
+            
+            // Sauvegarder le panier
+            localStorage.setItem('cart', JSON.stringify(cart));
+            
+            // Mettre à jour le compteur
+            updateCartCount();
+        }
+        
+        // Fonction pour mettre à jour le compteur du panier
+        function updateCartCount() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+            
+            // Mettre à jour tous les compteurs de panier dans la page
+            document.querySelectorAll('.cart-count').forEach(element => {
+                element.textContent = totalItems;
+            });
+        }
+    });
+</script>
+<script>
+    // Système unifié de gestion du panier
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialiser les données si elles n'existent pas
+       
+        if (!localStorage.getItem('cart')) {
+            localStorage.setItem('cart', JSON.stringify([]));
+        }
+
+        // Gestion des boutons "Ajouter au panier"
+        document.querySelectorAll('.btn-cart').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const productCard = this.closest('[class*="-card"]'); // Fonctionne avec tea-card, product-card, etc.
+                const productId = productCard.getAttribute('data-id') || generateId(productCard);
+                const productName = productCard.querySelector('[class*="-name"]').textContent;
+                const productPrice = parsePrice(productCard.querySelector('[class*="-price"]').textContent);
+                const productImage = productCard.querySelector('[class*="-image"]').src;
+                
+                addToCart({
+                    id: productId,
+                    name: productName,
+                    price: productPrice,
+                    image: productImage
+                });
+
+                // Feedback visuel
+                this.innerHTML = '<i class="fas fa-check"></i> Ajouté';
+                this.style.backgroundColor = '#6b5643';
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-shopping-cart"></i> Ajouter';
+                    this.style.backgroundColor = '#a38f78';
+                }, 2000);
+            });
+        });
+
+        
+
+        // Fonctions utilitaires
+        function generateId(element) {
+            return 'prod-' + Math.random().toString(36).substr(2, 9);
+        }
+
+        function parsePrice(priceText) {
+            return parseFloat(priceText.replace(/[^0-9.,]/g, '').replace(',', '.'));
+        }
+
+        function addToCart(product) {
+            let cart = JSON.parse(localStorage.getItem('cart'));
+            const existingItem = cart.find(item => item.id === product.id);
+            
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                product.quantity = 1;
+                cart.push(product);
+            }
+            
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateHeaderCounters();
+        }
+
+        function updateHeaderCounters() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    
+            // Mettre à jour tous les compteurs dans la page
+            document.querySelectorAll('.cart-count').forEach(el => el.textContent = cart.reduce((sum, item) => sum + item.quantity, 0));
+            
+        }
+    });
+</script>
+</body>
+</html>

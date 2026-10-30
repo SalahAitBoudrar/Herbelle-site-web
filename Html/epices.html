@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbelle - Épices du Monde</title>
+<link rel="stylesheet" href="../Css/epices.css">
+  <link rel="stylesheet" href="../Css/footer.css">
+    <link rel="stylesheet" href="../Css/header.css">
+    <link rel="stylesheet" href="../Css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ 
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="header-container">
+            <div class="header-top">
+                <div class="logo-container">
+                    <a href="index.html" class="logo-text">
+                        <span class="logo-emoji">🌿</span>Herbelle
+                    </a>
+                </div>
+                
+                <div class="search-container">
+                    <form action="recherche.html" method="GET">
+                        <input type="text" placeholder="Rechercher nos produits..." name="q">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                
+                <div class="header-right">
+                       
+                    <div class="auth-buttons">
+                        <button class="auth-btn login-btn" onclick="window.location.href='connexion.html'">Connexion</button>
+                        <button class="auth-btn register-btn" onclick="window.location.href='inscription.html'">Inscription</button>
+                    </div>
+                     <div class="header-icons">                      
+                        <a href="panier.html" class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                         </a>
+                    </div> 
+                </div>
+            </div>
+            
+            <div class="header-bottom">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link">Produits</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="tisanes.html">Tisanes</a></li>
+                                <li><a href="thes.html">Thés</a></li>
+                                <li><a href="epices.html">Épices</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#about" class="nav-link">Sur nous</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                        <li><a href="#reviews" class="nav-link">Avis</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+     <div class="container">
+        <div class="page-header">
+            <h1>Épices du Monde</h1>
+            <p class="page-description">Découvrez notre sélection d'épices rares et de qualité, soigneusement sélectionnées pour sublimer vos plats et prendre soin de votre santé.</p>
+        </div>
+    <div class="container">
+        <div class="products-grid">
+            <!-- Épice 1 - Curcuma -->
+            <div class="product-card animate delay-1">
+                <img src="../images produits/curcuma.jpg" alt="Curcuma Bio en poudre" class="product-image">
+                <div class="product-overlay">
+                    <h3>Caractéristiques</h3>
+                    <p>Antioxydant puissant (curcumine), anti-inflammatoire naturel, protecteur hépatique.</p>
+                    <h3>Utilisation</h3>
+                    <p>1/2 cuillère à café dans les plats avec poivre noir pour activation. Supporte mal la cuisson longue.</p>
+                    <h3>Origine</h3>
+                    <p>Inde - Tamil Nadu (Agriculture biodynamique)</p>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Curcuma Bio</h3>
+                    <p class="product-price">9,90 € / 30g</p>
+                    <div class="product-actions">
+                        <button class="btn btn-cart" data-product="Curcuma Bio" data-price="9.90"><i class="fas fa-shopping-cart"></i> Ajouter</button>
+                    
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Épice 2 - Cannelle -->
+            <div class="product-card animate delay-2">
+                <img src="../images produits/Bâtons de cannelle de Ceylan.jpg" alt="Bâtons de cannelle de Ceylan" class="product-image">
+                <div class="product-overlay">
+                    <h3>Caractéristiques</h3>
+                    <p>Régule la glycémie, riche en aldéhyde cinnamique, propriétés antifongiques.</p>
+                    <h3>Utilisation</h3>
+                    <p>1 bâton pour 500ml de liquide chaud. À retirer après 10 minutes d'infusion.</p>
+                    <h3>Origine</h3>
+                    <p>Sri Lanka - Forêts de Kandy (Grade C5)</p>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Cannelle de Ceylan</h3>
+                    <p class="product-price">14,50 € / 20g</p>
+                    <div class="product-actions">
+                        <button class="btn btn-cart" data-product="Cannelle de Ceylan" data-price="14.50"><i class="fas fa-shopping-cart"></i> Ajouter</button>
+                       
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Épice 3 - Cardamome -->
+            <div class="product-card animate delay-3">
+                <img src="../images produits/Gousses de cardamome verte.jpg" alt="Gousses de cardamome verte" class="product-image">
+                <div class="product-overlay">
+                    <h3>Caractéristiques</h3>
+                    <p>Digestive, rafraîchissante buccale, riche en cinéol, stimulante circulatoire.</p>
+                    <h3>Utilisation</h3>
+                    <p>3 gousses écrasées pour 1L de thé ou infusion. Retirer les gousses après 5 minutes.</p>
+                    <h3>Origine</h3>
+                    <p>Guatemala - Cueillie à pleine maturité</p>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Cardamome Verte</h3>
+                    <p class="product-price">22,90 € / 50g</p>
+                    <div class="product-actions">
+                        <button class="btn btn-cart" data-product="Cardamome Verte" data-price="22.90"><i class="fas fa-shopping-cart"></i> Ajouter</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Épice 4 - Piment d'Espelette -->
+            <div class="product-card animate delay-1">
+                <img src="../images produits/Piment d'Espelette .jpg" alt="Piment d'Espelette en poudre" class="product-image">
+                <div class="product-overlay">
+                    <h3>Caractéristiques</h3>
+                    <p>Puissant antioxydant (capsaïcine), stimule le métabolisme, saveur chaude mais douce.</p>
+                    <h3>Utilisation</h3>
+                    <p>Saupoudrer en fin de cuisson. 1 pincée = 2/10 sur l'échelle de Scoville.</p>
+                    <h3>Origine</h3>
+                    <p>France - AOP Espelette (Pays Basque)</p>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Piment d'Espelette</h3>
+                    <p class="product-price">18,50 € / 40g</p>
+                    <div class="product-actions">
+                        <button class="btn btn-cart" data-product="Piment d'Espelette" data-price="18.50"><i class="fas fa-shopping-cart"></i> Ajouter</button>
+                      
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Épice 5 - Vanille Bourbon -->
+            <div class="product-card animate delay-2">
+                <img src="../images produits/Gousses de vanille bourbon de Madagascar .jpg" alt="Gousses de vanille Bourbon" class="product-image">
+                <div class="product-overlay">
+                    <h3>Caractéristiques</h3>
+                    <p>Arômes complexes (250 composés), aphrodisiaque naturel, riche en vanilline naturelle.</p>
+                    <h3>Utilisation</h3>
+                    <p>1 gousse fendue pour 500ml de liquide. Rincer et sécher la gousse après usage.</p>
+                    <h3>Origine</h3>
+                    <p>Madagascar - Sambava (Grade A)</p>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Vanille Bourbon</h3>
+                    <p class="product-price">32,90 € / 2 gousses</p>
+                    <div class="product-actions">
+                        <button class="btn btn-cart" data-product="Vanille Bourbon" data-price="32.90"><i class="fas fa-shopping-cart"></i> Ajouter</button>
+                       
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Épice 6 - Cumin Noir -->
+            <div class="product-card animate delay-3">
+                <img src="../images produits/Poudre de graines de cumin noir .jpg" alt="Graines de cumin noir" class="product-image">
+                <div class="product-overlay">
+                    <h3>Caractéristiques</h3>
+                    <p>Immunostimulant (thymoquinone), protecteur gastrique, utilisé en médecine prophétique.</p>
+                    <h3>Utilisation</h3>
+                    <p>1 cuillère à café torréfiée puis moulue sur plats. Goût puissant.</p>
+                    <h3>Origine</h3>
+                    <p>Égypte - Vallée du Nil (Bio certifié)</p>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Cumin Noir</h3>
+                    <p class="product-price">12,50 € / 60g</p>
+                    <div class="product-actions">
+                        <button class="btn btn-cart" data-product="Cumin Noir" data-price="12.50"><i class="fas fa-shopping-cart"></i> Ajouter</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Épice 7 - Sumac -->
+            <div class="product-card animate delay-1">
+                <img src="../images produits/Sumac en poudre.jpg" alt="Sumac en poudre" class="product-image">
+                <div class="product-overlay">
+                    <h3>Caractéristiques</h3>
+                    <p>Saveur citronnée naturelle, riche en vitamine C, utilisé dans le zaatar libanais.</p>
+                    <h3>Utilisation</h3>
+                    <p>Saupoudrer sur salades ou houmous. Ne pas chauffer pour préserver la vitamine C.</p>
+                    <h3>Origine</h3>
+                    <p>Liban - Montagnes du Chouf</p>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Sumac Rouge</h3>
+                    <p class="product-price">11,90 € / 45g</p>
+                    <div class="product-actions">
+                        <button class="btn btn-cart" data-product="Sumac Rouge" data-price="11.90"><i class="fas fa-shopping-cart"></i> Ajouter</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Épice 8 - Gingembre -->
+            <div class="product-card animate delay-2">
+                <img src="../images produits/Gingembre moulu.jpg" alt="Gingembre moulu" class="product-image">
+                <div class="product-overlay">
+                    <h3>Caractéristiques</h3>
+                    <p>Anti-nauséeux (gingérol), réchauffant, stimule la circulation sanguine.</p>
+                    <h3>Utilisation</h3>
+                    <p>1/2 cuillère à café dans thés ou plats. Goût piquant caractéristique.</p>
+                    <h3>Origine</h3>
+                    <p>Jamaïque - Variété "Jamaican Ginger"</p>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Gingembre Moulu</h3>
+                    <p class="product-price">8,90 € / 70g</p>
+                    <div class="product-actions">
+                        <button class="btn btn-cart" data-product="Gingembre Moulu" data-price="8.90"><i class="fas fa-shopping-cart"></i> Ajouter</button>
+                     
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Épice 9 - Paprika -->
+            <div class="product-card animate delay-3">
+                <img src="../images produits/Paprika fumé .jpg" alt="Paprika fumé " class="product-image">
+                <div class="product-overlay">
+                    <h3>Caractéristiques</h3>
+                    <p>Riche en capsaïcine et vitamine A, saveur fumée obtenue par séchage au bois de chêne.</p>
+                    <h3>Utilisation</h3>
+                    <p>1 cuillère à café pour colorer et aromatiser sauces et marinades.</p>
+                    <h3>Origine</h3>
+                    <p>Hongrie - Région de Szeged</p>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Paprika Fumé</h3>
+                    <p class="product-price">10,50 € / 50g</p>
+                    <div class="product-actions">
+                        <button class="btn btn-cart" data-product="Paprika Fumé" data-price="10.50"><i class="fas fa-shopping-cart"></i> Ajouter</button>
+                     
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Épice 10 - Safran -->
+            <div class="product-card animate delay-1">
+                <img src="../images produits/Filaments de safran.jpg" alt="Filaments de safran" class="product-image">
+                <div class="product-overlay">
+                    <h3>Caractéristiques</h3>
+                    <p>Épice la plus chère au monde (150 fleurs pour 1g), antioxydant puissant (crocin).</p>
+                    <h3>Utilisation</h3>
+                    <p>3 filaments infusés 15min dans 50ml d'eau chaude avant utilisation.</p>
+                    <h3>Origine</h3>
+                    <p>Iran - Région du Khorasan (Grade I)</p>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Safran Pur</h3>
+                    <p class="product-price">89,90 € / 0.5g</p>
+                    <div class="product-actions">
+                        <button class="btn btn-cart" data-product="Safran Pur" data-price="89.90"><i class="fas fa-shopping-cart"></i> Ajouter</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+           <div class="footer-col footer-about">
+                <h3><span>🌿</span>Herbelle</h3>
+                <p>La nature en tasse depuis 2020. Produits bio et équitables pour votre bien-être.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+                <button class="logout-btn">Se déconnecter</button>
+            </div>
+            
+            <div class="footer-col footer-links">
+                <h4>Liens utiles</h4>
+               <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="tisanes.html">Tisanes</a></li>
+                    <li><a href="thes.html">Thés</a></li>
+                    <li><a href="epices.html">Épices</a></li>
+                    <li><a href="#about">Sur nous</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col footer-contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li> <a href="https://www.google.com/maps/@36.7054483,4.063232,14z?entry=ttu" style="color: white;"><i class="fas fa-map-marker-alt"></i> Tizi-Ouzou, Algérie</a></li>
+                    <li><i class="fas fa-phone"></i> +213 555 555 55</li>
+                    <li><i class="fas fa-envelope"></i> Herbelle25@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <a href="cgv.html">CGV</a>
+                <a href="mentions-legales.html">Mentions légales</a>
+                <a href="confidentialite.html">Confidentialité</a>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2025 Herbelle. Tous droits réservés.
+            </div>
+            <div class="footer-payment">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Gestion des boutons "Ajouter au panier"
+            document.querySelectorAll('.btn-cart').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    
+                    // Récupérer les données du produit
+                    const productName = this.getAttribute('data-product');
+                    const productPrice = this.getAttribute('data-price');
+                    
+                    // Stocker dans localStorage
+                    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                    cart.push({
+                        name: productName,
+                        price: productPrice
+                    });
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    
+                    // Mettre à jour le compteur du panier
+                    updateCartCount();
+                    
+                    // Animation du bouton
+                    this.innerHTML = '<i class="fas fa-check"></i> Ajouté';
+                    this.style.backgroundColor = '#6b5643';
+                    setTimeout(() => {
+                        this.innerHTML = '<i class="fas fa-shopping-cart"></i> Ajouter';
+                        this.style.backgroundColor = '#a38f78';
+                    }, 2000);
+                });
+            });
+            
+            
+            // Mettre à jour les compteurs au chargement de la page
+            updateCartCount();
+            
+            // Animation au scroll
+            const animateOnScroll = () => {
+                document.querySelectorAll('.product-card').forEach(card => {
+                    const rect = card.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }
+                });
+            };
+            
+            window.addEventListener('scroll', animateOnScroll);
+            animateOnScroll(); // Initialisation
+            
+            // Fonction pour mettre à jour le compteur du panier
+            function updateCartCount() {
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                document.querySelector('.cart-count').textContent = cart.length;
+            }
+           
+        });
+    </script>
+    <script>
+    // Fonction pour gérer le clic sur le bouton "Ajouter au panier"
+    function handleAddToCart(event) {
+        event.preventDefault();
+        
+        // Récupérer les informations du produit
+        const productCard = event.target.closest('.product-card');
+        const productId = productCard.getAttribute('data-id');
+        const productName = productCard.querySelector('.product-name').textContent;
+        const productPrice = parseFloat(productCard.querySelector('.product-price').textContent.replace('€', '').trim());
+        const productImage = productCard.querySelector('.product-image img').src;
+        
+        // Créer l'objet produit
+        const product = {
+            id: productId,
+            name: productName,
+            price: productPrice,
+            image: productImage,
+            quantity: 1
+        };
+        
+        // Ajouter au panier
+        addToCart(product);
+    }
+    
+    // Fonction pour ajouter un article au panier
+    function addToCart(product) {
+        // Récupérer le panier depuis le localStorage
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        
+        // Vérifier si le produit est déjà dans le panier
+        const existingItemIndex = cart.findIndex(item => item.id === product.id);
+        
+        if (existingItemIndex !== -1) {
+            // Si le produit existe déjà, augmenter la quantité
+            cart[existingItemIndex].quantity += product.quantity || 1;
+        } else {
+            // Sinon, ajouter le nouveau produit
+            cart.push({
+                id: product.id,
+                name: product.name,
+                price: product.price,
+                image: product.image,
+                quantity: product.quantity || 1
+            });
+        }
+        
+        // Sauvegarder le panier dans le localStorage
+        localStorage.setItem('cart', JSON.stringify(cart));
+        
+        // Mettre à jour le compteur du panier
+        updateCartCount();
+        
+        // Afficher une notification
+        alert(`${product.name} a été ajouté à votre panier!`);
+    }
+    
+    // Fonction pour mettre à jour le compteur du panier
+    function updateCartCount() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+        
+        // Mettre à jour le compteur dans le header
+        document.querySelector('.cart-count').textContent = cartCount;
+    }
+    
+    // Ajouter les écouteurs d'événements aux boutons "Ajouter au panier"
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialiser le panier s'il n'existe pas
+        if (!localStorage.getItem('cart')) {
+            localStorage.setItem('cart', JSON.stringify([]));
+        }
+        
+        // Mettre à jour le compteur du panier au chargement
+        updateCartCount();
+        
+        // Ajouter les écouteurs d'événements
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', handleAddToCart);
+        });
+    });
+</script>
+<script>
+    // Système unifié de gestion  du panier
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialiser les données si elles n'existent pas
+        
+        if (!localStorage.getItem('cart')) {
+            localStorage.setItem('cart', JSON.stringify([]));
+        }
+
+        // Mettre à jour les compteurs au chargement
+        updateHeaderCounters();
+
+        // Gestion des boutons "Ajouter au panier"
+        document.querySelectorAll('.btn-cart').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const productCard = this.closest('[class*="-card"]'); // Fonctionne avec tea-card, product-card, etc.
+                const productId = productCard.getAttribute('data-id') || generateId(productCard);
+                const productName = productCard.querySelector('[class*="-name"]').textContent;
+                const productPrice = parsePrice(productCard.querySelector('[class*="-price"]').textContent);
+                const productImage = productCard.querySelector('[class*="-image"]').src;
+                
+                addToCart({
+                    id: productId,
+                    name: productName,
+                    price: productPrice,
+                    image: productImage
+                });
+
+                // Feedback visuel
+                this.innerHTML = '<i class="fas fa-check"></i> Ajouté';
+                this.style.backgroundColor = '#6b5643';
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-shopping-cart"></i> Ajouter';
+                    this.style.backgroundColor = '#a38f78';
+                }, 2000);
+            });
+        });
+
+       
+        // Fonctions utilitaires
+        function generateId(element) {
+            return 'prod-' + Math.random().toString(36).substr(2, 9);
+        }
+
+        function parsePrice(priceText) {
+            return parseFloat(priceText.replace(/[^0-9.,]/g, '').replace(',', '.'));
+        }
+
+        function addToCart(product) {
+            let cart = JSON.parse(localStorage.getItem('cart'));
+            const existingItem = cart.find(item => item.id === product.id);
+            
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                product.quantity = 1;
+                cart.push(product);
+            }
+            
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateHeaderCounters();
+        }
+        function updateHeaderCounters() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+         
+            
+            // Mettre à jour tous les compteurs dans la page
+            document.querySelectorAll('.cart-count').forEach(el => el.textContent = cart.reduce((sum, item) => sum + item.quantity, 0));
+          
+        }
+    });
+</script>
+</body>
+</html>

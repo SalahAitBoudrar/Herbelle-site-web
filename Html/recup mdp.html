@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Récupération de mot de passe - Herbelle</title>
+        <link rel="stylesheet" href="../Css/footer.css">
+    <link rel="stylesheet" href="../Css/header.css">
+    <link rel="stylesheet" href="../Css/recup mdp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+        <!-- Header -->
+    <header id="header">
+        <div class="header-container">
+            <div class="header-top">
+                <div class="logo-container">
+                    <a href="index.html" class="logo-text">
+                        <span class="logo-emoji">🌿</span>Herbelle
+                    </a>
+                </div>
+                
+                <div class="search-container">
+                    <form action="recherche.html" method="GET">
+                        <input type="text" placeholder="Rechercher nos produits..." name="q">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                
+                <div class="header-right">
+                  <div class="auth-buttons">
+                        <button class="auth-btn login-btn" onclick="window.location.href='connexion.html'">Connexion</button>
+                        <button class="auth-btn register-btn" onclick="window.location.href='inscription.html'">Inscription</button>
+                    </div>  
+                    <div class="header-icons">
+                      <a href="panier.html" class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+            <div class="header-bottom">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link">Produits</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="tisanes.html">Tisanes</a></li>
+                                <li><a href="thes.html">Thés</a></li>
+                                <li><a href="epices.html">Épices</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#about" class="nav-link">Sur nous</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                        <li><a href="#reviews" class="nav-link">Avis</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="background-overlay"></div>
+    
+    <div class="auth-container">
+        <!-- Design Side -->
+        <div class="auth-design">
+            <div class="design-content">
+                <h2>Mot de passe oublié ?</h2>
+                <p>Nous allons vous aider à récupérer l'accès à votre compte en toute sécurité.</p>
+            </div>
+        </div>
+        
+        <!-- Form Side -->
+        <div class="auth-form-container">
+            <div class="form-wrapper">
+                <div id="reset-form">
+                    <div class="form-header">
+                        <h2>Réinitialisation</h2>
+                        <p>Entrez votre email pour recevoir un lien de réinitialisation</p>
+                    </div>
+                    
+                    <form id="password-reset-form">
+                        <div class="form-grouprecu">
+                            <label for="reset-email">Adresse email</label>
+                            <div class="input-wrapper">
+                                <input type="email" id="reset-email" class="form-control" placeholder="votre@email.com" required>
+                                <i class="fas fa-envelope input-icon"></i>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn" id="reset-btn">
+                            <span class="btn-text">Envoyer le lien</span>
+                        </button>
+                    </form>
+                    
+                    <div class="auth-footer">
+                        <p>Vous vous souvenez de votre mot de passe? <a href="connexion.html">Connectez-vous</a></p>
+                    </div>
+                </div>
+                
+                <div id="success-message" class="success-message">
+                    <i class="fas fa-check-circle success-icon"></i>
+                    <h3>Email envoyé !</h3>
+                    <p>Nous avons envoyé un lien de réinitialisation à votre adresse email. Veuillez vérifier votre boîte de réception.</p>
+                    <a href="connexion.html" class="submit-btn">Retour à la connexion</a>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+           <div class="footer-col footer-about">
+    <h3><span>🌿</span>Herbelle</h3>
+    <p>La nature en tasse depuis 2020. Produits bio et équitables pour votre bien-être.</p>
+    <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+    </div>
+    <button class="logout-btn">Se déconnecter</button>
+</div>
+            
+            <div class="footer-col footer-links">
+                <h4>Liens utiles</h4>
+               <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="tisanes.html">Tisanes</a></li>
+                    <li><a href="thes.html">Thés</a></li>
+                    <li><a href="epices.html">Épices</a></li>
+                    <li><a href="#about">Sur nous</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col footer-contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li> <a href="https://www.google.com/maps/@36.7054483,4.063232,14z?entry=ttu" style="color: white;"><i class="fas fa-map-marker-alt"></i> Tizi-Ouzou, Algérie</a></li>
+                    <li><i class="fas fa-phone"></i> +213 555 555 55</li>
+                    <li><i class="fas fa-envelope"></i> Herbelle25@gmail.com</li>
+                </ul>
+                
+            
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <a href="cgv.html">CGV</a>
+                <a href="mentions-legales.html">Mentions légales</a>
+                <a href="confidentialite.html">Confidentialité</a>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2025 Herbelle. Tous droits réservés.
+            </div>
+            <div class="footer-payment">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </footer>
+ 
+   <script src="../Js/recup mdp.js"></script>
+   <script>
+     document.getElementById('password-reset-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simulate sending reset link
+            const resetBtn = document.getElementById('reset-btn');
+            resetBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+            resetBtn.disabled = true;
+            
+            setTimeout(function() {
+                document.getElementById('reset-form').style.display = 'none';
+                document.getElementById('success-message').style.display = 'block';
+            }, 2000);
+        });
+   </script>
+</body>
+</html>
